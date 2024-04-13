@@ -7,7 +7,6 @@ Bu repository, Python'da n katmanlı mimarinin uygulamasını barındırır.
 ## Kurulum
 
 1. **Anaconda Navigator Kurulumu:** Bilgisayarınıza Anaconda Navigator'u kurun ve Python 3.8.19 içeren bir ortam (env.) oluşturun.
-   
 2. **Kütüphanelerin Kurulumu:** Oluşturulan ortamı aktifleştirin ve aşağıdaki kütüphaneleri yükleyin:
 
     ```bash
@@ -22,10 +21,19 @@ Bu repository, Python'da n katmanlı mimarinin uygulamasını barındırır.
 ## Uygulamanın Çalıştırılması
 
 1. **IDE Kullanımı:** Proje kodlarını Visual Studio Code veya tercih ettiğiniz bir IDE ile açın.
-
 2. **Ortam Kontrolü:** Projenin, kurulum sırasında oluşturulan ve kütüphanelerin yüklendiği ortam için çalıştırıldığından emin olun.
+3. **Env. Dosyasının Oluşturulması:** Projenin ana dizininde .env dosyası oluşturup aşağıdaki kodları yapıştırıp kaydedin.
+   ```bash
+   ENVIRONMENT=dev
+   SQLITE_DB_NAME = database.db
 
-3. **Proje Başlatma:** Aşağıdaki komutu kullanarak projeyi çalıştırın:
+   API_V1_STR=/api/v1
+   DOCS_URL=/api/v1/docs
+   REDOCS_URL=/api/v1/redocs
+   OPENAPI_URL=/api/v1/openapi
+    ```
+
+4. **Proje Başlatma:** Aşağıdaki komutu kullanarak projeyi çalıştırın:
 
     ```bash
     uvicorn main:app --reload
@@ -64,7 +72,6 @@ This repository hosts an implementation of an N-layered architecture application
 ## Installation
 
 1. **Anaconda Navigator Installation:** Install Anaconda Navigator on your computer and create an environment (env.) containing Python 3.8.19.
-   
 2. **Library Installation:** Activate the created environment and install the following libraries:
 
     ```bash
@@ -79,10 +86,18 @@ This repository hosts an implementation of an N-layered architecture application
 ## Running the Application
 
 1. **IDE Usage:** Open the project code in Visual Studio Code or your preferred IDE.
-
 2. **Environment Check:** Ensure that the project is running in the environment created during installation, where the libraries are installed.
+3. **Creating the .env File**: Create a .env file in the project's main directory and paste the following code, then save it.
+   ```bash
+   ENVIRONMENT=dev
+   SQLITE_DB_NAME = database.db
 
-3. **Starting the Project:** Run the following command to start the project:
+   API_V1_STR=/api/v1
+   DOCS_URL=/api/v1/docs
+   REDOCS_URL=/api/v1/redocs
+   OPENAPI_URL=/api/v1/openapi
+    ```
+4. **Starting the Project:** Run the following command to start the project:
 
     ```bash
     uvicorn main:app --reload
