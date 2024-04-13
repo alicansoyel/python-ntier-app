@@ -25,7 +25,7 @@ Bu repository, Python'da n katmanlı mimarinin uygulamasını barındırır.
 
 2. **Ortam Kontrolü:** Projenin, kurulum sırasında oluşturulan ve kütüphanelerin yüklendiği ortam için çalıştırıldığından emin olun.
 
-3. **Proje Başlatma:** Aşağıdaki komutu kullanarak proje çalıştırılır:
+3. **Proje Başlatma:** Aşağıdaki komutu kullanarak projeyi çalıştırın:
 
     ```bash
     uvicorn main:app --reload
